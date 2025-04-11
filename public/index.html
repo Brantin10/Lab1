@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dish App</title>
+</head>
+<body>
+  <h1>Recipe Collection</h1>
+
+  <table id="dishTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Origin</th>
+        <th>Cooking Time</th>
+        <th>Spice Level</th>
+        <th>Servings</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Add New Recipe</h2>
+  <form id="dishForm">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="text" name="origin" placeholder="Origin" required />
+    <input type="number" name="cookingTime" placeholder="Cooking Time" />
+    <input type="text" name="spiceLevel" placeholder="Spice Level" />
+    <input type="number" name="servings" placeholder="Servings" />
+    <br /><br />
+    <textarea name="ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+    <br /><br />
+    <textarea name="preparationSteps" placeholder="Preparation Steps (comma separated)" required></textarea>
+    <br /><br />
+    <button type="submit">Add Dish</button>
+  </form>
+
+  <!-- ✅ Include your external JS file -->
+  <script src="app.js"></script>
+</body>
+</html>
